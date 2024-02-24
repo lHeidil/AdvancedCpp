@@ -7,6 +7,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Exo4", "Exo4\Exo4.vcproj", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TemplateMat2D", "TemplateMat2D\TemplateMat2D.vcproj", "{464C8B26-51ED-4BAD-97C4-BA9428C64281}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestVector", "TestVector\TestVector.vcproj", "{8C988CD1-8040-4334-AFB3-FA2721738030}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExceptMat", "ExceptMat\ExceptMat.vcproj", "{20C88545-D759-4957-8E5F-E5AF88BE02A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -25,6 +29,14 @@ Global
 		{464C8B26-51ED-4BAD-97C4-BA9428C64281}.Debug|Win32.Build.0 = Debug|Win32
 		{464C8B26-51ED-4BAD-97C4-BA9428C64281}.Release|Win32.ActiveCfg = Release|Win32
 		{464C8B26-51ED-4BAD-97C4-BA9428C64281}.Release|Win32.Build.0 = Release|Win32
+		{8C988CD1-8040-4334-AFB3-FA2721738030}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8C988CD1-8040-4334-AFB3-FA2721738030}.Debug|Win32.Build.0 = Debug|Win32
+		{8C988CD1-8040-4334-AFB3-FA2721738030}.Release|Win32.ActiveCfg = Release|Win32
+		{8C988CD1-8040-4334-AFB3-FA2721738030}.Release|Win32.Build.0 = Release|Win32
+		{20C88545-D759-4957-8E5F-E5AF88BE02A7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{20C88545-D759-4957-8E5F-E5AF88BE02A7}.Debug|Win32.Build.0 = Debug|Win32
+		{20C88545-D759-4957-8E5F-E5AF88BE02A7}.Release|Win32.ActiveCfg = Release|Win32
+		{20C88545-D759-4957-8E5F-E5AF88BE02A7}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
