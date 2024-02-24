@@ -1,5 +1,4 @@
 #include "CTriPascal.h"
-
 void main(){
 
 CTriPascal<unsigned long> t1(5);
