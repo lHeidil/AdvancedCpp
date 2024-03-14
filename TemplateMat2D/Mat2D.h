@@ -1,14 +1,13 @@
 #ifndef _MAT2D_H_
 #define _MAT2D_H_
 #include <string> //important to (cout << string) not <string.h>
-#include <ctime> //used with srand(time(0))
 #include <iostream>
 #include <iomanip>
 #include <typeinfo.h>
 #include <stdlib.h>
 #define _USE_MATH_DEFINES
 #include <math.h>
-
+#include <ctime>
 
 //template random function to be called within the method
 template<typename CElem>
@@ -158,6 +157,7 @@ public:
     }
 
 	//Exo5 E
+	//le nouvear degree de libertee c'est le NX "new added dimension to move in"
 	template <const size_t NX>
 	Mat2D<NR, NX, CElem> operator*(const Mat2D<NC, NX, CElem>& m) const {
 		Mat2D<NR, NX, CElem> result;

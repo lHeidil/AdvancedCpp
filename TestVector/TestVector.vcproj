@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="9.00"
+	Version="9,00"
 	Name="TestVector"
-	ProjectGUID="{8C988CD1-8040-4334-AFB3-FA2721738030}"
+	ProjectGUID="{0B03D833-1F12-41A9-9812-B35B1F398A23}"
 	RootNamespace="TestVector"
 	Keyword="Win32Proj"
 	TargetFrameworkVersion="196613"

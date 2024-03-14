@@ -147,7 +147,7 @@ for_each(vi.begin(),vi.end(),MultDivValue<int>(1,5));
 cout<<vi;
 for_each(vi.begin(),vi.end(),carre<int>); //fonction(definit par sont nom) not foncteur(definit par son instance) donc je ne donne pas parenthese et () j'ecris juste le nom puis je dois donner que c'est parametre de int
 cout<<vi;
-for_each(vi.begin(),vi.end(),SquareRoot<int>()); //fonction(definit par sont nom) not foncteur(definit par son instance) donc je ne donne pas parenthese et () j'ecris juste le nom puis je dois donner que c'est parametre de int
+for_each(vi.begin(),vi.end(),SquareRoot<int>()); //foncteur(definit par sont nom) not foncteur(definit par son instance) donc je ne donne pas parenthese et () j'ecris juste le nom puis je dois donner que c'est parametre de int
 cout<<vi;
 }
 

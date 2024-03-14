@@ -2,23 +2,23 @@
 
 using namespace std;
 
-//template<typename T> void ShowVect(ostream& os, const vector<T>& v, size_t idx_max=0, size_t idx_min=0)
-//{
-//  os<<"Vecteur de type "<<typeid(T).name()<< ", taille "<<v.size()<<", capacite "<<
-//    v.capacity()<<", max_size "<<v.max_size()<<endl;
-//  if(v.empty()) return;
-//  if(idx_max==0 || idx_max>v.size()) idx_max=v.size();
-//  if(idx_min>idx_max) idx_min=idx_max;
-//  for(size_t i=idx_min; i<idx_max; i++) os<<"  ["<<i<<"] "<<v[i]<<endl;
-//}
-//template<typename T> inline ostream& operator<<(ostream& os, const vector<T>& v) { ShowVect<T>(os,v); return os; }
-//
-//template<typename T, size_t SZ> ostream& ShowTab(ostream& os, const T (&tab)[SZ])
-//{
-//  os<<"Tableau de type "<<typeid(tab).name()<<" :\n";
-//  for(size_t i=0; i<SZ; i++) os<<"  ["<<i<<"]="<<tab[i]<<"\n";
-//  return os;
-//}
+template<typename T> void ShowVect(ostream& os, const vector<T>& v, size_t idx_max=0, size_t idx_min=0)
+{
+  os<<"Vecteur de type "<<typeid(T).name()<< ", taille "<<v.size()<<", capacite "<<
+    v.capacity()<<", max_size "<<v.max_size()<<endl;
+  if(v.empty()) return;
+  if(idx_max==0 || idx_max>v.size()) idx_max=v.size();
+  if(idx_min>idx_max) idx_min=idx_max;
+  for(size_t i=idx_min; i<idx_max; i++) os<<"  ["<<i<<"] "<<v[i]<<endl;
+}
+template<typename T> inline ostream& operator<<(ostream& os, const vector<T>& v) { ShowVect<T>(os,v); return os; }
+
+template<typename T, size_t SZ> ostream& ShowTab(ostream& os, const T (&tab)[SZ])
+{
+  os<<"Tableau de type "<<typeid(tab).name()<<" :\n";
+  for(size_t i=0; i<SZ; i++) os<<"  ["<<i<<"]="<<tab[i]<<"\n";
+  return os;
+}
 //void test1() // tests divers
 //{
 //  try
@@ -78,7 +78,7 @@ using namespace std;
 //  }
 //}
 //
-//template <TPermBase::TOrdre ORD> void test3() // test de permutation
+//template <TOrdre ORD> void test3() // test de permutation
 //{
 //  cout<<"============================================\n";
 //  cout<<"Permutation d'ordre "<<ORD<<" sur un vector<char> :\n";
@@ -95,7 +95,7 @@ void testA()
 {
   cout <<"-------------Test A-------------"<<endl;
   const TOrdre ORD1 = 5;
-  TIndex Tab[ORD1];
+  //TIndex Tab[ORD1];
   //TPerm<ORD1>::Idx2Tab(5,Tab);	
   //cout<<TPerm<ORD1>::Tab2Idx(Tab)<<endl;
   TPerm<ORD1> p1;
@@ -137,9 +137,7 @@ void testC()
   else {  cout << "La permutation n'est pas une racine d'ordre " << N << " de l'id." << endl; }
   cout <<"-----------End Test C-----------\n"<<endl;
 }
-//__int64 = long long = 64 bits
-//max= fact(ordmax) =(2^64)-1 (unsinged from0 to (2^n)-1)
-//ordmax est le nombre qui donne factorial <= (2^64)-1 ???
+//ordmax est le nombre qui donne factorial donc on doit tester avec une fonction est voir le dernier ord qui donne factoriel maximum avant le overflow
 void main()
 {
   testA();

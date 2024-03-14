@@ -62,7 +62,7 @@ public:
 
   //getters
   TIndex GetIdx(){ return IPerm; }
-  TFact MaxIdx(){ return IPermMax; }
+  static TFact MaxIdx(){ return IPermMax; }
 
   //operators ++
   void Next(){IPerm<IPermMax?IPerm++:IPerm=0;}
@@ -112,17 +112,6 @@ public:
       }
     return false;
   }
-  std::vector<TIndex> PermuteVect(const std::vector<TIndex>& V1,TIndex _IPerm) const {
-    if (V1.size() != ORD) {
-      throw "Vector size != permutation order";
-    }
-    TIndex tab[];
-	Idx2Tab(_Perm,tab);
-	size_t size = sizeof(tab) / sizeof(tab[0]);
-    std::vector<TIndex> V2(tab, tab + size);
-
-    return V2;
-  }
 
 };
 
@@ -130,3 +119,22 @@ template<TOrdre ORD> const TFact TPerm<ORD>::IPermMax = TPerm<ORD>::Fact(ORD); /
 
 template <TOrdre ORD>
 inline std::ostream& operator<<(std::ostream& os, const TPerm<ORD>& p) { return p.Show(os); }
+
+//template <TOrdre ORD, typename TIndex>
+//std::vector<TIndex> PermuteVect(const std::vector<TIndex>& originalVector, TPerm<ORD>& permutation) {
+//    if (originalVector.size() != ORD) {
+//        throw std::invalid_argument("Vector size is not equal to permutation order");
+//    }
+//
+//    TIndex tab[ORD];
+//	permutation.Idx2Tab(permutation.GetIdx(), tab);
+//
+//    std::vector<TIndex> permutedVector;
+//    permutedVector.reserve(originalVector.size());
+//
+//    for (int i = 0; i < ORD; ++i) {
+//        permutedVector.push_back(originalVector[tab[i]]);
+//    }
+//
+//    return permutedVector;
+//}

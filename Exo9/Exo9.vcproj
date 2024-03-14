@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="9.00"
+	Version="9,00"
 	Name="Exo9"
-	ProjectGUID="{D7118DCF-8012-4EBA-9DBA-95BAE01E2C8E}"
+	ProjectGUID="{B3F949E3-8E86-4EA0-A9FA-1E6BC7337ADB}"
 	RootNamespace="Exo9"
 	Keyword="Win32Proj"
 	TargetFrameworkVersion="196613"
@@ -170,12 +170,20 @@
 			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
+			<File
+				RelativePath=".\main.cpp"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Fichiers d&apos;en-tête"
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
+			<File
+				RelativePath=".\TPerm.h"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Fichiers de ressources"

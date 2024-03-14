@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="9.00"
+	Version="9,00"
 	Name="TemplateMat2D"
-	ProjectGUID="{464C8B26-51ED-4BAD-97C4-BA9428C64281}"
+	ProjectGUID="{80075092-2321-4301-B885-2D9ABD508273}"
 	RootNamespace="TemplateMat2D"
 	Keyword="Win32Proj"
 	TargetFrameworkVersion="196613"

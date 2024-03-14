@@ -68,18 +68,19 @@ TObj VectSomme(const TObj (&tab)[SZ]){
 	return S;
 }
 //Exo2 C
-template <typename TObj,size_t SZ> inline
-size_t GetSize(const TObj(& o1)[SZ]){ // () o1 pour etre fort que SZ
-	return sizeof(o1)/sizeof(o1[0]);
-}
 template <typename TObj, const size_t SZ> inline
 void TestVectSomme(std::ostream& os, const TObj (&tab)[SZ]){
 	os<<"Somme du tableau "<<VectSomme(tab)<<"\n ";
 }
+//Exo2 F
+template <typename TObj,size_t SZ> inline
+size_t GetSize(const TObj(& o1)[SZ]){ // () o1 pour etre fort que SZ
+	return sizeof(o1)/sizeof(o1[0]);
+}
 //Exo3 A
 template <typename TObj> inline
 void TriMontant(std::ostream& os, TObj* tab, size_t sz)
-{
+{	//bubble sort
     for (size_t i = 0; i < sz - 1; ++i) {
         for (size_t j = 0; j < sz - i - 1; ++j) {
             if (tab[j] > tab[j + 1]) {

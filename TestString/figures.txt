@@ -1,0 +1,5 @@
+Rectangle 2.1 6.2
+Cercle 2.2
+Carre 5.4
+Rectangle 1.5 4.0
+Machin 1.5 4.0 5.6
